@@ -30,3 +30,16 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+.done {
+  border-color: #0f766e;
+  background-color: #ccfbf1;
+}
+
+.done h3 {
+  text-decoration: line-through;
+}
+.habit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
