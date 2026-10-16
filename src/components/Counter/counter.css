@@ -9,3 +9,8 @@
   margin-bottom: 8px;
   font-weight: bold;
 }
+.daily-progress progress {
+  width: 100%;
+  height: 12px;
+  accent-color: #0f766e;
+}
