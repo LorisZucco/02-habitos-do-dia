@@ -6,13 +6,25 @@ import { Header } from "./components/Header";
 import { CounterExercise } from "./components/CounterExercise";
 
 import initalHabits from "./data/habits";
+import { HabitForm } from "./components/HabitForm";
 
 function App() {
   const [habits, setHabits] = useState(initalHabits);
   const doneCount = habits.filter((habit) => habit.done).length;
   // const [count, setCount] = useState(0);
 
+  function handleAdd(name) {
+    const newHabit = {
+      id: Date.now(),
+      icon: "⭐",
+      name,
+      done: false,
+    };
+    setHabits([...habits, newHabit]);
+  }
+
   function handleToggle(id) {
+    // handleAdd("Hábito Teste");
     // setCount(count + 1);
     // console.log(count);
     // console.log(id);
@@ -38,6 +50,8 @@ function App() {
           />
         ))}
       </main>
+
+      <HabitForm onAdd={handleAdd} />
     </>
   );
 }
