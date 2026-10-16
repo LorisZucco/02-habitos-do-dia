@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./habit-form.css";
 
-export function HabitForm(onAdd) {
+export function HabitForm({ onAdd }) {
   const [name, setName] = useState("");
 
   function handleSubmit(e) {
@@ -17,12 +17,12 @@ export function HabitForm(onAdd) {
         id="habit-name"
         type="text"
         maxLength={40}
-        placeholder="Ex. Alongar por 5 minutos"
+        placeholder="Ex.: Alongar por 5 minutos"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <p></p>
-      <button>Adcionar</button>
+      <button>Adicionar</button>
     </form>
   );
 }

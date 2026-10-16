@@ -4,32 +4,37 @@
   gap: 12px;
   padding: 12px;
   border: 1px solid #99f6e4;
-  background-color: #fff;
+  border-radius: 12px;
+  background-color: #ffffff;
 }
 
 .habit-icon {
   font-size: 32px;
 }
+
 .habit-info {
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex-grow: 1;
 }
+
 .habit-info h3 {
   font-size: 16px;
 }
+
 button {
   align-self: flex-start;
   padding: 8px 14px;
   border: 1px solid transparent;
   border-radius: 8px;
   background-color: #0f766e;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
 }
+
 .done {
   border-color: #0f766e;
   background-color: #ccfbf1;
@@ -37,9 +42,4 @@ button {
 
 .done h3 {
   text-decoration: line-through;
-}
-.habit-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
