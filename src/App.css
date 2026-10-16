@@ -1,0 +1,21 @@
+.habit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #99f6e4;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.habit-form label {
+  font-weight: bold;
+}
+
+.habit-form input {
+  padding: 10px;
+  border: 1px solid #a8a29e;
+  border-radius: 8px;
+  font-size: 16px;
+}
